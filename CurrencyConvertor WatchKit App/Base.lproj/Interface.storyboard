@@ -48,12 +48,12 @@
         <!--Results-->
         <scene sceneID="WAY-vY-Ifw">
             <objects>
-                <controller identifier="Results" id="AQX-qN-rob">
+                <controller identifier="Results" id="AQX-qN-rob" customClass="ResultInterfaceController" customModule="CurrencyConvertor_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="wc6-Ri-Bv3">
                             <items>
                                 <tableRow identifier="RowFetch" selectable="NO" id="Yz3-qo-lD2" customClass="FetchingRow" customModule="CurrencyConvertor_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="yfr-H2-G9Z">
+                                    <group key="rootItem" width="1" alignment="left" hidden="YES" id="yfr-H2-G9Z">
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="Label" id="beo-TS-PtZ"/>
                                         </items>
@@ -65,11 +65,19 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <button width="134" alignment="left" title="Done" id="yJ1-zr-8yx">
+                        <button width="1" alignment="left" title="Done" id="yJ1-zr-8yx">
                             <color key="backgroundColor" red="0.95294117649999999" green="0.52156862749999999" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="doneTapped" destination="AQX-qN-rob" id="55x-Yc-2Bj"/>
+                            </connections>
                         </button>
                         <label alignment="center" text="Fetching..." id="eaI-BL-QXO"/>
                     </items>
+                    <connections>
+                        <outlet property="doneButton" destination="yJ1-zr-8yx" id="1A3-DG-h2V"/>
+                        <outlet property="fetchingLabel" destination="eaI-BL-QXO" id="eQ2-s2-DNe"/>
+                        <outlet property="table" destination="wc6-Ri-Bv3" id="316-cu-TJI"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="153" y="173"/>

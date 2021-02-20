@@ -25,6 +25,7 @@
 		75DDBDFB25E08207003AB956 /* CurrencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBDFA25E08207003AB956 /* CurrencyRow.swift */; };
 		75DDBE0625E082F2003AB956 /* CurrenciesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBE0525E082F2003AB956 /* CurrenciesInterfaceController.swift */; };
 		75DDBE0C25E0A236003AB956 /* FetchingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBE0B25E0A236003AB956 /* FetchingRow.swift */; };
+		75DDBE1A25E0A40C003AB956 /* ResultInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBE1925E0A40C003AB956 /* ResultInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		75DDBDFA25E08207003AB956 /* CurrencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRow.swift; sourceTree = "<group>"; };
 		75DDBE0525E082F2003AB956 /* CurrenciesInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesInterfaceController.swift; sourceTree = "<group>"; };
 		75DDBE0B25E0A236003AB956 /* FetchingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingRow.swift; sourceTree = "<group>"; };
+		75DDBE1925E0A40C003AB956 /* ResultInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				75DDBE0B25E0A236003AB956 /* FetchingRow.swift */,
+				75DDBE1925E0A40C003AB956 /* ResultInterfaceController.swift */,
 			);
 			path = FetchingView;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				75DDBDE025E04D51003AB956 /* ExtensionDelegate.swift in Sources */,
 				75DDBE0625E082F2003AB956 /* CurrenciesInterfaceController.swift in Sources */,
 				75DDBDDE25E04D51003AB956 /* InterfaceController.swift in Sources */,
+				75DDBE1A25E0A40C003AB956 /* ResultInterfaceController.swift in Sources */,
 				75DDBE0C25E0A236003AB956 /* FetchingRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
