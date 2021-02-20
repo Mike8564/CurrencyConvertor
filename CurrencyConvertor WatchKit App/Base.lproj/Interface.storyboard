@@ -39,10 +39,68 @@
                         <outlet property="amountLabel" destination="bZu-58-m86" id="X1V-61-kvq"/>
                         <outlet property="amountSlider" destination="XIg-70-314" id="P0i-Wi-xPv"/>
                         <outlet property="currencyPicker" destination="Bhf-Bl-DiJ" id="7HQ-mZ-6Ux"/>
+                        <segue destination="MdE-zE-2FL" kind="relationship" relationship="nextPage" id="swA-MU-psk"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="153" y="-136"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="WAY-vY-Ifw">
+            <objects>
+                <controller identifier="Results" id="AQX-qN-rob">
+                    <items>
+                        <table alignment="left" id="wc6-Ri-Bv3">
+                            <items>
+                                <tableRow identifier="RowFetch" selectable="NO" id="Yz3-qo-lD2" customClass="FetchingRow" customModule="CurrencyConvertor_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="yfr-H2-G9Z">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="beo-TS-PtZ"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="group" destination="yfr-H2-G9Z" id="zxS-yq-pfp"/>
+                                        <outlet property="textLabel" destination="beo-TS-PtZ" id="6km-KZ-UnF"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="134" alignment="left" title="Done" id="yJ1-zr-8yx">
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.52156862749999999" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </button>
+                        <label alignment="center" text="Fetching..." id="eaI-BL-QXO"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="153" y="173"/>
+        </scene>
+        <!--Currencies-->
+        <scene sceneID="nJs-vo-AUh">
+            <objects>
+                <controller identifier="Currencies" title="Currencies" id="MdE-zE-2FL" customClass="CurrenciesInterfaceController" customModule="CurrencyConvertor_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="KCt-Vs-RKR">
+                            <items>
+                                <tableRow identifier="Row" id="bfq-N8-74I" customClass="CurrencyRow" customModule="CurrencyConvertor_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Z3w-dJ-MYz">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="nFq-ee-ogu"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="currencyLabel" destination="nFq-ee-ogu" id="R9l-FC-WFq"/>
+                                        <outlet property="group" destination="Z3w-dJ-MYz" id="ke5-he-qAd"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="currencyTable" destination="KCt-Vs-RKR" id="bAE-xt-lhy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="476" y="-136"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -73,7 +131,7 @@
             <objects>
                 <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="CurrencyConvertor_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="482" y="1061"/>
         </scene>
     </scenes>
 </document>

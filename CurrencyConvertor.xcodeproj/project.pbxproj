@@ -22,6 +22,9 @@
 		75DDBDE225E04D51003AB956 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBDE125E04D51003AB956 /* NotificationController.swift */; };
 		75DDBDE425E04D51003AB956 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBDE325E04D51003AB956 /* ComplicationController.swift */; };
 		75DDBDE625E04D52003AB956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DDBDE525E04D52003AB956 /* Assets.xcassets */; };
+		75DDBDFB25E08207003AB956 /* CurrencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBDFA25E08207003AB956 /* CurrencyRow.swift */; };
+		75DDBE0625E082F2003AB956 /* CurrenciesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBE0525E082F2003AB956 /* CurrenciesInterfaceController.swift */; };
+		75DDBE0C25E0A236003AB956 /* FetchingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBE0B25E0A236003AB956 /* FetchingRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		75DDBDE525E04D52003AB956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75DDBDE725E04D52003AB956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75DDBDE825E04D52003AB956 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		75DDBDFA25E08207003AB956 /* CurrencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRow.swift; sourceTree = "<group>"; };
+		75DDBE0525E082F2003AB956 /* CurrenciesInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesInterfaceController.swift; sourceTree = "<group>"; };
+		75DDBE0B25E0A236003AB956 /* FetchingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,8 @@
 		75DDBDDC25E04D51003AB956 /* CurrencyConvertor WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				75DDBE0A25E0A208003AB956 /* FetchingView */,
+				75DDBDF925E081E2003AB956 /* CurrenciesView */,
 				75DDBDDD25E04D51003AB956 /* InterfaceController.swift */,
 				75DDBDDF25E04D51003AB956 /* ExtensionDelegate.swift */,
 				75DDBDE125E04D51003AB956 /* NotificationController.swift */,
@@ -163,6 +171,23 @@
 				75DDBDE825E04D52003AB956 /* PushNotificationPayload.apns */,
 			);
 			path = "CurrencyConvertor WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		75DDBDF925E081E2003AB956 /* CurrenciesView */ = {
+			isa = PBXGroup;
+			children = (
+				75DDBDFA25E08207003AB956 /* CurrencyRow.swift */,
+				75DDBE0525E082F2003AB956 /* CurrenciesInterfaceController.swift */,
+			);
+			path = CurrenciesView;
+			sourceTree = "<group>";
+		};
+		75DDBE0A25E0A208003AB956 /* FetchingView */ = {
+			isa = PBXGroup;
+			children = (
+				75DDBE0B25E0A236003AB956 /* FetchingRow.swift */,
+			);
+			path = FetchingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DDBDE225E04D51003AB956 /* NotificationController.swift in Sources */,
+				75DDBDFB25E08207003AB956 /* CurrencyRow.swift in Sources */,
 				75DDBDE425E04D51003AB956 /* ComplicationController.swift in Sources */,
 				75DDBDE025E04D51003AB956 /* ExtensionDelegate.swift in Sources */,
+				75DDBE0625E082F2003AB956 /* CurrenciesInterfaceController.swift in Sources */,
 				75DDBDDE25E04D51003AB956 /* InterfaceController.swift in Sources */,
+				75DDBE0C25E0A236003AB956 /* FetchingRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
